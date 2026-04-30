@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offroad Game - Top-Down Racing</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="gameContainer">
+        <canvas id="gameCanvas" width="1200" height="800"></canvas>
+        <div id="ui">
+            <div id="stats">
+                <div class="stat">Distance: <span id="distance">0</span>m</div>
+                <div class="stat">Speed: <span id="speed">0</span> km/h</div>
+                <div class="stat">Score: <span id="score">0</span></div>
+                <div class="stat">Level: <span id="level">1</span></div>
+            </div>
+            <div id="controls">
+                <p>🎮 <strong>Controls:</strong> Arrow Keys / WASD to move | SPACE to brake</p>
+            </div>
+        </div>
+        <div id="gameOver" class="hidden">
+            <div id="gameOverContent">
+                <h1>Game Over!</h1>
+                <p id="finalScore">Final Score: 0</p>
+                <p id="finalDistance">Distance: 0m</p>
+                <button onclick="location.reload()">Play Again</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
